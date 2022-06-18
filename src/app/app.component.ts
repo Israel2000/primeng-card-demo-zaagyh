@@ -10,11 +10,9 @@ import { PrimeNGConfig } from 'primeng/api';
 })
 export class AppComponent { 
   constructor(private primengConfig: PrimeNGConfig) {}
-//   export class MyModel {
+  enterDate: Date;
+  eventDate: Date;
 
-//     value: Date;
-
-// }
 
   ngOnInit() {
     this.primengConfig.ripple = true;

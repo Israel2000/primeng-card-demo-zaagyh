@@ -4,22 +4,22 @@
 <p-card class="mb-5">
     <div class="top-section">
         <div class="far-left-section">       
-            <div [style]="{'margin-left': '4rem', 'margin-bottom': '0.5rem'}">            
+            <div [style]="{'margin-left': '4.5rem', 'margin-bottom': '0.5rem'}">            
                 <label>Log No:</label>
                 <input pInputText type="text" type="text"/>
             
                 <label [style]="{'margin-left': '2rem'}">Event Date:</label>
-                <!-- <p-calendar [(ngModel)]="value"></p-calendar> -->
-                <input pInputText type="text" />
+                <p-calendar inputId="basic" [(ngModel)]="eventDate" [style]="{'margin-left': '1rem'}"></p-calendar>
+                
             </div>
-            <div [style]="{'margin-left': '2.5rem', 'margin-bottom': '0.5rem'}">
+            <div class="col-12" [style]="{'margin-left': '2.9rem', 'margin-bottom': '0.5rem'}" >
                 <label>Part Name:</label>
-                <input pInputText type="text"/>
+                <input pInputText type="text" [style]="{'width': '510px' }"/>
             </div>
-            <div [ngStyle]="{backgroundColor:'var(--blue-50)'}">
+            <div [style]="{'padding': '10px', 'border-radius': '8px', 'border-color': 'black'}" [ngStyle]="{backgroundColor:'var(--blue-50)'}">
                 <div [style]="{'margin-left': '3rem', 'margin-bottom': '0.5rem'}">
                     <label>Test Item:</label>
-                    <input pInputText type="text"/>
+                    <input pInputText type="text" [style]="{'width': '503px' }"/>
                 </div>
                 <div class="mr-2">
                     <label>Test Item Model:</label>
@@ -33,8 +33,7 @@
         <div class="middle-right-section">
             <div [style]="{'margin-left': '3.6rem', 'margin-bottom': '0.5rem'}">
                 <label>Enter Date:</label>
-                <input pInputText type="text" />
-                <!-- <p-calendar [(ngModel)]="value"></p-calendar> -->
+                <p-calendar [(ngModel)]="enterDate"></p-calendar>
             </div>
             <div [style]="{'margin-left': '3.5rem', 'margin-bottom': '0.5rem'}">
                 <label>Entered By:</label>
@@ -45,11 +44,11 @@
             </div>
             <div [style]="{'margin-bottom': '0.5rem'}">
                 <p-button>Location List</p-button>
-                <input pInputText type="text"/>
+                <input pInputText type="text" [style]="{'width': '313px' }"/>
             </div>
             <div [style]="{'margin-left': '1.7rem'}">
                 <label>Ref. Document:</label>
-                <input pInputText type="text"/>
+                <input pInputText type="text" [style]="{'width': '315px' }"/>
            </div>
         </div> <!--middle-right-section-->
     </div> <!--end of top section-->
