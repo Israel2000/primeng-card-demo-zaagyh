@@ -6,7 +6,7 @@
   MAINTENANCE EVENT DATA
 </h2>
 
-<p-card>
+<p-card [style]="{'width': '1990px'}" >
   <div class="top-section">
     <div class="far-left-section">
       <div [style]="{ 'margin-left': '4.5rem', 'margin-bottom': '0.5rem' }">
@@ -93,7 +93,7 @@
   <!--end of top section-->
 </p-card>
 
-<p-card [style]="{ 'margin-top': '-0.8rem', 'margin-bottom': '-0.9rem' }">
+<p-card [style]="{ 'margin-top': '-0.8rem', 'margin-bottom': '-0.9rem', 'width': '1990px' }">
   <span
     [style]="{
       color: 'var(--blue-500)',
@@ -282,11 +282,11 @@
       </div>
       <div [style]="{ 'margin-left': '1.5rem', 'margin-bottom': '0.5rem' }">
         <label>Maint MMC:</label>
-        <input pInputText type="text" [style]="{ width: '250px' }" />
+        <input pInputText type="text" [style]="{ width: '370px' }" />
       </div>
       <div [style]="{ 'margin-left': '2.7rem' }">
         <label>Part MFG:</label>
-        <input pInputText type="text" [style]="{ width: '250px' }" />
+        <input pInputText type="text" [style]="{ width: '260px' }" />
         <p-button
           [style]="{
             height: '30px',
@@ -314,11 +314,11 @@
         }"
       >
         <label>Part Number:</label>
-        <input pInputText type="text" />
+        <input pInputText type="text" [style]="{ width: '360px' }"/>
       </div>
       <div [style]="{ 'margin-left': '0.6rem', 'margin-bottom': '0.5rem' }">
         <label>Serial Number:</label>
-        <input pInputText type="text" />
+        <input pInputText type="text" [style]="{ width: '360px' }"/>
       </div>
       <div>
         <p-button
@@ -329,7 +329,7 @@
           }"
           >MMC List</p-button
         >
-        <input pInputText type="text" />
+        <input pInputText type="text" [style]="{ width: '360px' }"/>
       </div>
     </div>
   </p-card>
