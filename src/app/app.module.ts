@@ -11,6 +11,7 @@ import {InputTextModule} from 'primeng/inputtext';
 import {CalendarModule} from 'primeng/calendar';
 import {CheckboxModule} from 'primeng/checkbox';
 import {TableModule} from 'primeng/table';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   imports: [
@@ -22,7 +23,8 @@ import {TableModule} from 'primeng/table';
     CalendarModule,
     FormsModule,
     CheckboxModule,
-    TableModule
+    TableModule,
+    HttpClientModule  
     ],
   declarations: [ AppComponent ],
   bootstrap:    [ AppComponent ]
