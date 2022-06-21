@@ -34,7 +34,7 @@
               'margin-left': '1.5rem',
               width: '130px',
               height: '30px'
-            }"
+            }" 
             >Test Item List</p-button
           >
         </div>
@@ -78,8 +78,8 @@
   <table>
     <thead>
       <tr>
-        <th></th>
-        <th [style]="{color: 'var(--blue-500)'}">Type</th>
+        <th [style]="{'width': '100px'}"></th>
+        <th [ngStyle]="{color: 'var(--blue-500)'}">Type</th>
         <th [style]="{color: 'var(--blue-500)'}">Text</th>
         <th></th>
       </tr>
@@ -87,44 +87,39 @@
     <tbody>
       <tr>
       <td>
-      <p-button [style]="{
-       'margin': 'auto', 'display': 'block'}">Type</p-button>
+      <p-button [style]="{ height: '30px'}" >Type</p-button>
           </td>
 
         <td>00001</td>
         <td>Blue</td>
         <td>
         <p-button [style]="{
-            'margin': 'auto', 'display': 'block'}">View Text</p-button>
+             'height': '30px'}">View Text</p-button>
             </td>
 
       </tr>
       <tr>
       <td>
-      <p-button [style]="{
-        'margin': 'auto', 'display': 'block'}">Type</p-button>
+      <p-button [style]="{ height: '30px'}">Type</p-button>
           </td>
 
         <td>00002</td>
         <td>Red</td>
         <td>
-        <p-button [style]="{
-            'margin': 'auto', 'display': 'block'}">View Text</p-button>
+        <p-button [style]="{ height: '30px'}">View Text</p-button>
             </td>
 
 
       </tr>
       <tr>
       <td>
-      <p-button [style]="{
-        'margin': 'auto', 'display': 'block'}">Type</p-button>
+      <p-button [style]="{ height: '30px'}">Type</p-button>
           </td>
 
         <td>00003</td>
         <td>Green</td>
         <td>
-        <p-button [style]="{
-            'margin': 'auto', 'display': 'block'}">View Text</p-button>
+        <p-button [style]="{ height: '30px'}">View Text</p-button>
             </td>
 
       </tr>
