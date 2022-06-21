@@ -1,7 +1,14 @@
 /* ::deep p-card {
   padding-bottom: 10px;
 } */
+/* .table-container {
+  text-align: center;
+} */
 
+.tablebuttons {
+  width: 140px !important;
+  text-align: center;
+}
 
 ::ng-deep p-card  {
   padding: 0.2rem;
@@ -60,5 +67,10 @@ p-button {
 
 .middle-right-bottom {
   width: 500px;
+}
+
+
+::ng-deep p-card > div {
+  min-height: 258px;
 }
 
