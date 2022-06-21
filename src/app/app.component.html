@@ -39,7 +39,9 @@
             [style]="{
               'margin-left': '1.5rem',
               width: '130px',
-              height: '30px', 'backgroundColor': 'green'
+              height: '30px',
+              backgroundColor: 'rgb(69 69 69)',
+              border: 'none'
             }"
             >Test Item List</p-button
           >
@@ -57,7 +59,13 @@
       <div [style]="{ 'margin-left': '3.5rem', 'margin-bottom': '0.5rem' }">
         <label>Entered By:</label>
         <input pInputText type="text" />
-        <p-button [style]="{ height: '30px', 'margin-right': '6rem' }"
+        <p-button
+          [style]="{
+            height: '30px',
+            'margin-right': '6rem',
+            backgroundColor: 'rgb(69 69 69)',
+            border: 'none'
+          }"
           >Name List</p-button
         >
         <p-checkbox name="groupname" value="val1"></p-checkbox>
@@ -65,7 +73,14 @@
         Data Entry Completed
       </div>
       <div [style]="{ 'margin-bottom': '0.5rem' }">
-        <p-button [style]="{ height: '30px' }">Location List</p-button>
+        <p-button
+          [style]="{
+            height: '30px',
+            backgroundColor: 'rgb(69 69 69)',
+            border: 'none'
+          }"
+          >Location List</p-button
+        >
         <input pInputText type="text" [style]="{ width: '313px' }" />
       </div>
       <div [style]="{ 'margin-left': '1.7rem' }">
@@ -100,15 +115,27 @@
       <tbody>
         <tr>
           <td class="tablebuttons">
-            <p-button [style]="{ height: '30px' }">Type</p-button>
+            <p-button
+              [style]="{
+                height: '30px',
+                backgroundColor: 'rgb(69 69 69)',
+                border: 'none'
+              }"
+              >Type</p-button
+            >
           </td>
-
-          <td>00001</td>
-          <td>Blue</td>
+          <td>
+            <input pInputText type="text" placeholder="0001" style="width: 400px"/>
+          </td>
+          <td>
+          <input pInputText type="text" placeholder="Blue" style="width: 400px"/>
+          </td>
           <td class="tablebuttons">
             <p-button
               [style]="{
-                height: '30px'
+                height: '30px',
+                backgroundColor: 'rgb(69 69 69)',
+                border: 'none'
               }"
               >View Text</p-button
             >
@@ -116,24 +143,60 @@
         </tr>
         <tr>
           <td class="tablebuttons">
-            <p-button [style]="{ height: '30px' }">Type</p-button>
+            <p-button
+              [style]="{
+                height: '30px',
+                backgroundColor: 'rgb(69 69 69)',
+                border: 'none'
+              }"
+              >Type</p-button
+            >
           </td>
 
-          <td>00002</td>
-          <td>Red</td>
+          <td>
+          <input pInputText type="text" placeholder="0002" style="width: 400px"/>
+          </td>
+          <td>
+          <input pInputText type="text" placeholder="Gray" style="width: 400px"/>
+          </td>
           <td class="tablebuttons">
-            <p-button [style]="{ height: '30px' }">View Text</p-button>
+            <p-button
+              [style]="{
+                height: '30px',
+                backgroundColor: 'rgb(69 69 69)',
+                border: 'none'
+              }"
+              >View Text</p-button
+            >
           </td>
         </tr>
         <tr>
           <td class="tablebuttons">
-            <p-button [style]="{ height: '30px' }">Type</p-button>
+            <p-button
+              [style]="{
+                height: '30px',
+                backgroundColor: 'rgb(69 69 69)',
+                border: 'none'
+              }"
+              >Type</p-button
+            >
           </td>
-
-          <td>00003</td>
-          <td>Green</td>
+          <td>
+          <input pInputText type="text" placeholder="0003" style="width: 400px"/>
+          </td>
+          <td>
+          <input pInputText type="text" placeholder="Green" style="width: 400px"/>
+            
+          </td>
           <td class="tablebuttons">
-            <p-button [style]="{ height: '30px' }">View Text</p-button>
+            <p-button
+              [style]="{
+                height: '30px',
+                backgroundColor: 'rgb(69 69 69)',
+                border: 'none'
+              }"
+              >View Text</p-button
+            >
           </td>
         </tr>
       </tbody>
@@ -158,26 +221,45 @@
       >
         <label>Maint interval:</label>
         <input pInputText type="text" />
-        <p-button [style]="{ height: '30px', width: '140px' }"
+        <p-button
+          [style]="{
+            height: '30px',
+            width: '140px',
+            backgroundColor: 'rgb(69 69 69)',
+            border: 'none'
+          }"
           >Interval List</p-button
         >
       </div>
       <div [style]="{ 'margin-bottom': '0.5rem' }">
         <label>Maint Function:</label>
         <input pInputText type="text" />
-        <p-button [style]="{ height: '30px', width: '140px' }"
+        <p-button
+          [style]="{
+            height: '30px',
+            width: '140px',
+            backgroundColor: 'rgb(69 69 69)',
+            border: 'none'
+          }"
           >Function List</p-button
         >
       </div>
       <div [style]="{ 'margin-bottom': '0.5rem' }">
         <label>Maint Function:</label>
         <input pInputText type="text" />
-        <p-button [style]="{ height: '30px' }">Msn Effect List</p-button>
+        <p-button
+          [style]="{
+            height: '30px',
+            backgroundColor: 'rgb(69 69 69)',
+            border: 'none'
+          }"
+          >Msn Effect List</p-button
+        >
       </div>
     </div>
   </p-card>
 
-  <p-card class="box-1"> 
+  <p-card class="box-1">
     <div class="middle-right-bottom">
       <div>
         <span [style]="{ color: 'var(--blue-500)', 'font-weight': 'bold' }"
@@ -200,12 +282,19 @@
       </div>
       <div [style]="{ 'margin-left': '1.5rem', 'margin-bottom': '0.5rem' }">
         <label>Maint MMC:</label>
-        <input pInputText type="text" />
+        <input pInputText type="text" [style]="{ width: '250px' }" />
       </div>
       <div [style]="{ 'margin-left': '2.7rem' }">
         <label>Part MFG:</label>
-        <input pInputText type="text" />
-        <p-button [style]="{ height: '30px' }">MFG List</p-button>
+        <input pInputText type="text" [style]="{ width: '250px' }" />
+        <p-button
+          [style]="{
+            height: '30px',
+            backgroundColor: 'rgb(69 69 69)',
+            border: 'none'
+          }"
+          >MFG List</p-button
+        >
       </div>
     </div>
   </p-card>
@@ -232,7 +321,14 @@
         <input pInputText type="text" />
       </div>
       <div>
-        <p-button [style]="{ height: '30px' }">MMC List</p-button>
+        <p-button
+          [style]="{
+            height: '30px',
+            backgroundColor: 'rgb(69 69 69)',
+            border: 'none'
+          }"
+          >MMC List</p-button
+        >
         <input pInputText type="text" />
       </div>
     </div>
